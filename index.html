@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="quiz">
+        <div class="quiz-container">
+            <h1></h1>
+            <p id="question">PIM ย่อมาจากอะไร ?</p>
+            <input name="no1" id="a1" type="button" class="button" onclick="selectAnwer('#a1','no1')"
+                value="A) พีไอเอ็ม">
+            <input name="no1" id="b1" type="button" class="button" onclick="selectAnwer('#b1','no1')" value="B) ปิ๋ม">
+            <input name="no1" id="c1" type="button" class="button" onclick="selectAnwer('#c1','no1')" value="C) พิม">
+            <input name="no1" id="d1" type="button" class="button" onclick="selectAnwer('#d1','no1')" value="D) ภีม">
+        </div>
+
+        <div class="quiz-container">
+            <h1></h1>ปี ค.ส. ที่ก่อตั้งบริษัท โกซอฟท์ (ประเทศไทย)</p>
+            <input name="no2" id="a2" type="button" class="button" onclick="selectAnwer('#a2','no2')"
+                value="A) 2001">
+
+            <input name="no2" id="b2" type="button" class="button" onclick="selectAnwer('#b2','no2')" value="B) 2002">
+
+            <input name="no2" id="c2" type="button" class="button" onclick="selectAnwer('#c2','no2')" value="C) 2003">
+
+            <input name="no2" id="d2" type="button" class="button" onclick="selectAnwer('#d2','no2')" value="D) 2004">
+        </div>
+    </div>
+
+    <div id="result">
+        <div class="quiz-container">
+            <h1></h1>
+            <h2 id="question">สรุปคะแนน</h2>
+            <hr>
+            <h1 id="totalScore" class="score"></h1>
+            <button class="button warm" onclick="reset()">ลองอีกครั้ง</button>
+        </div>
+    </div>
+
+    <button id="submit" class="button green" disabled onclick="checkAnswer()">ส่งคำตอบ</button>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
